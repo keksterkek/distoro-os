@@ -1,3 +1,14 @@
+/*
+ * ORIGINAL AUTHOR: http://tutor-os-indo.heck.in/memset-malloc-free-dan-memcpy.xhtml
+ *
+ * Congratulations, you can copy code.
+ *
+ * oport, iport: http://tutor-os-indo.heck.in/cara-membuat-blue-screen-sendiri.xhtml
+ * Named inportb and outporb. Pretty much identical other than
+ * the for loop that decides to run 500 times, which is presumably
+ * optimized out by the compiler.
+ */
+
 unsigned char *memcpy (unsigned char *dest, const unsigned char *src, int count) {
 
 	unsigned char *ret = (unsigned char *) dest;

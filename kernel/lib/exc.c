@@ -33,6 +33,12 @@ extern void exc29 ();
 extern void exc30 ();
 extern void exc31 ();
 
+/*
+ * ORIGINAL AUTHOR: http://tutor-os-indo.heck.in/cara-membuat-blue-screen-sendiri.xhtml
+ * This again. Copy paste, renamed.  
+ */
+
+
 void exc_install () {
 
         idt_set_entry (0, (unsigned) exc0, 0x08, 0x8e);

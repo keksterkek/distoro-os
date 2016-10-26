@@ -1,5 +1,12 @@
 #include "../h/system.h"
 
+/*
+ * ORIGINAL AUTHOR: http://tutor-os-indo.heck.in/cara-membuat-blue-screen-sendiri.xhtml
+ * always0 is such a common name that Mario Novak and the author mentioned above
+ * had the same ideas how they should name their variables.
+ *
+ * Also the functions are literally just renamed and spaced out.
+ */
 struct idt_entry {
 
 	unsigned short base_lo;

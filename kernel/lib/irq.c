@@ -1,5 +1,14 @@
 #include "../h/system.h"
 
+/*
+ * ORIGINAL AUTHOR: http://tutor-os-indo.heck.in/cara-membuat-blue-screen-sendiri.xhtml
+ * The similarities drawn here:
+ * oport (0x20, 0x011); -> outporb(0x20, 0x11);
+ *
+ * idt_set_entry -> idt_set_gate.
+ * irq_handler is practically identical
+ */
+
 extern void irq0 ();
 extern void irq1 ();
 extern void irq2 ();

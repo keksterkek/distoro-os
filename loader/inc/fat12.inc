@@ -38,6 +38,8 @@ NoFile			db	"Can't find file you requested!", 10, 13, 0
 %define KernelLocationR 0xc000
 %define KernelLocationP 0x100000
 
+; Very generic code, once again
+
 Stage1Info:
 	
 	xor eax, eax
@@ -271,6 +273,8 @@ MoveIt:
 	cmp edx, 0x0
 	je MoveItDodajNe
 	add ecx, 0x1
+; Just another example where it's half Croatian, half English.
+; If you're going to copy paste, at least keep it unobvious.
 MoveItDodajNe:
 	mov eax, KernelLocationR 
 	mov ebx, KernelLocationP

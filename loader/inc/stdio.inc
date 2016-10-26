@@ -6,6 +6,8 @@ PrintString16Loop:
 	mov ah, 0x0e
 	mov al, [si]
 	cmp al, 0x0
+; Once again, a mix of Croatian and English
+; Keep it unobvious if you're going to copy paste.
 	je PrintString16Kraj
 	xor bx, bx
 	inc si

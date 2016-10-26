@@ -1,5 +1,8 @@
 bits 16
 
+; Bad version of enabling the address line. Also taken from
+; http://wiki.osdev.org/A20_Line
+
 inputWait:
 	in al, 0x64
 	test al, 10b

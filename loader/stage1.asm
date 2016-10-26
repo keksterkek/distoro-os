@@ -5,6 +5,10 @@ start: jmp _main
 
 times 	0xb-$+start 	db 	0
 
+; One of the authors: http://celestialcoding.com/os-developement/(2)-displaying-a-single-character/
+; Cannot be certain if original author since this code is going around
+; for years.
+
 bpbBytesPerSector	dw	512
 bpbSectorsPerCluster	db	1
 bpbReservedSectors	dw	1
@@ -37,7 +41,7 @@ FSFileName	db	"STAGE2  BIN"
 FSFileCluster	dw	0x0
 
 _main:
-	
+; Generic code that can be taken fro, ANYWHERE.
 	mov ax, cs
 	mov ds, ax
 	mov es, ax
